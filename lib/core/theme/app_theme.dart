@@ -59,6 +59,7 @@ class AppTheme {
         scaffoldBackgroundColor: AppColors.lightBackground,
         cardColor: AppColors.lightCard,
         dividerColor: AppColors.lightEmailDivider,
+        
         appBarTheme: const AppBarTheme(
           elevation: 0,
           centerTitle: false,
