@@ -12,7 +12,7 @@ Future<void> main() async {
     await windowManager.ensureInitialized();
 
     const windowOptions = WindowOptions(
-      size: Size(1200, 800),
+      size: Size(1920, 1080),
       minimumSize: Size(400, 600),
       center: true,
       title: 'Koto Mail',
@@ -20,6 +20,7 @@ Future<void> main() async {
     );
 
     windowManager.waitUntilReadyToShow(windowOptions, () async {
+      await windowManager.maximize();
       await windowManager.show();
       await windowManager.focus();
     });
